@@ -24,35 +24,35 @@ const GridComponent = () => {
       title: "Calendario",
       content: "Contenido de la tarjeta 2",
       icon: <SvgCard2 width={60} height={60} />,
-      screen: "Calendario",
+      screen: "Clientes",
     },
     {
       id: 3,
       title: "Usuarios",
       content: "Contenido de la tarjeta 3",
       icon: <SvgCard3 width={60} height={60} />,
-      screen: "ClientScreen",
+      screen: "Clientes",
     },
     {
       id: 4,
       title: "⁠Parámetros",
       content: "Contenido de la tarjeta 4",
       icon: <SvgCard4 width={60} height={60} />,
-      screen: "WalletScreen",
+      screen: "Clientes",
     },
     {
       id: 5,
       title: "⁠Reporte",
       content: "Contenido de la tarjeta 5",
       icon: <SvgCard5 width={60} height={60} />,
-      screen: "WalletScreen",
+      screen: "Clientes",
     },
     {
       id: 6,
       title: "Auditoría",
       content: "Contenido de la tarjeta 6",
       icon: <SvgCard6 width={60} height={60} />,
-      screen: "WalletScreen",
+      screen: "Clientes",
     },
   ];
 
@@ -79,15 +79,22 @@ const GridComponent = () => {
 const styles = StyleSheet.create({
   gridContainer: {
     marginTop: 20,
+    gap: 5,
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
-    padding: 10,
   },
   card: {
     width: "48%",
     height: 120,
-    backgroundColor: "#143D59",
+    backgroundColor: "white",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    // Propiedades específicas de Android para elevación
+    elevation: 7,
     marginBottom: 10,
     padding: 12,
     borderRadius: 5,
@@ -96,7 +103,7 @@ const styles = StyleSheet.create({
   },
   text: {
     marginTop: 9,
-    color: "white",
+    color: "#143D59",
   },
 });
 
